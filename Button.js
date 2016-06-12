@@ -31,7 +31,7 @@ export default class Button extends Component {
     }
 
     return (
-      <TouchableOpacity {...touchableProps} testID={this.props.testID} style={this.props.containerStyle}>
+      <TouchableOpacity {...touchableProps} testID={this.props.testID} accessibilityLabel={this.props.accessibilityLabel} style={this.props.containerStyle}>
         {this._renderGroupedChildren()}
       </TouchableOpacity>
     );
